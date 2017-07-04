@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-cn">
+    <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>组件列表</title>
+    <!--[if lte IE 8]>	
+  <script src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,es5-shim/4.1.14/es5-shim.min.js,es5-shim/4.1.14/es5-sham.min.js,html5shiv/3.7.2/html5shiv.min.js,media-match/2.0.2/media.match.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">组件列表</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <!--<ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container theme-showcase" role='main'>
+        <div class="page-header">
+            <h3>进度圆</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6 progress-chart-container">
+                <div id='box' class="progress-chart-box"></div>
+            </div>
+            <div class="col-md-6">
+                <div class="progress-chart-info">
+                    <pre class="f5 js-zeroclipboard-target">
+<span class="blue">let</span> box = $('#box').eq(0);
+<span class="blue">let</span> m = new <span class="green">ProgressChart</span>(box, {
+        "decimal": "0", <span class="grey">  //保留小数位</span>
+        "speed": "50"   <span class="grey"> //转速 参数</span>
+        });
+m.setValue(20, 50);
+                   </pre>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

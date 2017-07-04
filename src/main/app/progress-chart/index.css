@@ -1,0 +1,116 @@
+.circleProgress-container .text-name {
+    color: #258bcd;
+    text-align: center;
+    /*font-size: 1.5vw;*/
+    padding: 0.2em 0;
+}
+
+.circleProgress-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circleProgress-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.circleProgress-box .text_wrapper {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -37px;
+}
+
+.circleProgress-box .text_wrapper .num {
+    font-family: "NumberRegular";
+    color: #bb9814;
+    font-size: 200%;
+}
+
+.circleProgress-box .text_wrapper .unit {
+    color: #258bcd;
+    font-size: 100%;
+}
+
+.circleProgress_wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.circleProgress_wrapper.max {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.circleProgress_wrapper.min,
+.circleProgress_wrapper.mid {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleProgress-box .dotted-circle {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 0.15rem dotted #ffcc1e;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.circleProgress-box .solid-circle {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 50%;
+    border: 0.15rem solid #256082;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.circleProgress_wrapper.max .wrapper {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circleProgress_wrapper.max .circleProgress {
+    width: 200%;
+    height: 100%;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    transform: rotate(-135deg);
+    box-sizing: border-box;
+}
+
+.circleProgress_wrapper.max .left {
+    left: 0;
+}
+
+.circleProgress_wrapper.max .right {
+    right: 0;
+}
+
+.circleProgress_wrapper.max .leftcircle {
+    border-color: transparent transparent #ffcc1e #ffcc1e;
+}
+
+.circleProgress_wrapper.max .rightcircle {
+    border-color: #ffcc1e #ffcc1e transparent transparent;
+    margin-left: -100.5%;
+}
